@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Runner Game</title>
+</head>
+
+<body>
+
+    <div class="game-board">
+        <div class="scorePlace">
+            <h2 id="score">Pontuação: 0</h2>
+            <h2 id="high">Maior Pontuação: 0</h2>
+        </div>
+        <img src="Images/blue clouds.png" class="clouds">
+        <img src="Images/Mario Running.gif" class="mario">
+        <img src="Images/Pipe.png" class="pipe">
+    </div>
+
+    <div class="gameOver" style="display: none;">
+        <div>
+            <h3>Você perdeu</h3>
+            <h4>Deseja recomeçar?</h4>
+            <button onclick="reload()">Recomeçar</button>
+        </div>
+    </div>
+
+    <div class="gameStart">
+        <div>
+            <h3>Clique para começar</h3>
+            <button onclick="start()">começar</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
